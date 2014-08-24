@@ -1,7 +1,8 @@
 # phpのかるいフレームワーク
 
 ## メモ
-- PHPのマイクロフレームワーク
+- PHPのマイクロフレームワークであるslimをベース
+    - [Slim Framework Documentation](http://docs.slimframework.com/)
 - 気軽にRESTなAPI作れる
 - 1ファイルのPHPでAPIが作れる
 - 1ファイルだからこそ、ファイルが結構大きくなるとゴチャゴチャして読みにくい
@@ -36,7 +37,10 @@
 
 ```
 # composerはPATHを通しておく
-$ composer install
+$ composer.phar install
+$ cp config/config.php.sample config/config.php
+$ mysql -uroot < config/db/create.sql
+
 ```
 
 ### 参考リンク
